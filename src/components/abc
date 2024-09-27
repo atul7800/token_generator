@@ -1,0 +1,41 @@
+<TextField
+                label="Number of blue tokens"
+                name="noOfBlueTokens"
+                onChange={handleChange}
+                required
+              />
+
+              <TextField
+                label="Blue token prefix"
+                name="blueTokenPrefix"
+                onChange={handleChange}
+                required
+              />
+
+              <TextField
+                label="Blue token per row"
+                name="blueTokenPerRow"
+                onChange={handleChange}
+                required
+              />
+
+              <TextField
+                label="Number of red tokens"
+                name="noOfRedTokens"
+                onChange={handleChange}
+                required
+              />
+
+              <TextField
+                label="Red token prefix"
+                name="redTokenPrefix"
+                onChange={handleChange}
+                required
+              />
+
+              <TextField
+                label="Red token per row"
+                name="redTokenPerRow"
+                onChange={handleChange}
+                required
+              />
