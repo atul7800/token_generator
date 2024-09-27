@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import TokenGenerator from "./components/TokenGenerator";
 import AllTokens from "./components/AllTokens";
@@ -12,6 +12,9 @@ function App() {
     blueTokenPrefix: "",
     redTokenPrefix: "",
   });
+  useEffect(() => {
+    console.log(tokenData);
+  }, [tokenData]);
 
   return (
     <div className="appContainer" s>

@@ -37,6 +37,26 @@ function TokenGenerator({ setTokenData }) {
     },
   };
 
+  const handleClear = () => {
+    setTokenData({
+      noOfBlueTokens: "",
+      noOfRedTokens: "",
+      blueTokenPerRow: "",
+      redTokenPerRow: "",
+      blueTokenPrefix: "",
+      redTokenPrefix: "",
+    });
+
+    setFormData({
+      noOfBlueTokens: "",
+      noOfRedTokens: "",
+      blueTokenPerRow: "",
+      redTokenPerRow: "",
+      blueTokenPrefix: "",
+      redTokenPrefix: "",
+    });
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -134,7 +154,7 @@ function TokenGenerator({ setTokenData }) {
                 Generate
               </Button>
               <Button
-                onClick={() => setTokenData([])}
+                onClick={() => handleClear()}
                 type="reset"
                 variant="outlined"
                 sx={{
